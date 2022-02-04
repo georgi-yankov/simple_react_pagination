@@ -16,7 +16,7 @@ const App = () => {
       const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
       setPosts(res.data);
       setLoading(false);
-    };
+    }
 
     fetchPosts();
   }, []);
